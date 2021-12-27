@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Pizza</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="jquery/jquery-3.6.0.js"></script> 
+    <script src="jquery/jquery.slides.js"></script>
+    <script>
+        $(function(){
+          $(".slides").slidesjs({
+            width: 900,
+            height: 350,
+            play: {
+                active: true,
+                    // [boolean] Generate the play and stop buttons.
+                    // You cannot use your own buttons. Sorry.
+                effect: "slide",
+                    // [string] Can be either "slide" or "fade".
+                interval: 2000,
+                    //  el tiempo para que aparesca las imagenes en milisegundos
+                    // [number] Time spent on each slide in milliseconds.
+                auto: true,
+                    // sl momento de cargarse la pagina se activa 
+                    // [boolean] Start playing the slideshow on load.
+                swap: true,
+                    //  para que no aparescan los botones stop y play al mismo tiempo sino se alternan
+                    // [boolean] show/hide stop and play buttons
+                pauseOnHover: true,
+                    //  para que las imagenes pongo una pausa cuando el mouse esta encima para q te permita ver
+                    // [boolean] pause a playing slideshow on hover
+                restartDelay: 2000
+                    // cuanto tiempo tiene que pasar para q reinicie las imagenes en carrucel
+                    // [number] restart delay on inactive slideshow
+            }
+          });
+        });
+   </script>
+</head>
+<body>
+    <main>
+        <header>
+           <div class="logo">
+              <img src="imagenes/logo.png">
+           </div>
+           <div class="nombre">
+               <h1>Mr.Pizza</h1>
+           </div>         
+        </header>
+
+        <nav>
+           <li>Home</li>           
+           <li>Restaurantes</li>
+           <li>Combos</li>
+           <li>Ofertas</li>
+        </nav>
+
+        <div class="slides">
+           <img src="imagenes/1.jpg">
+           <img src="imagenes/2.jpg">
+           <img src="imagenes/3.jpg">       
+           <img src="imagenes/4.jpg">           
+        </div>
+
+        <div class="caja">
+            <div class="texto">
+                <h1>Prueba nuestra Pizza artesanal</h1>
+                <p>
+                    Somos una empresa innovadora que produce pizzas artesanales,con ingredientes de primera calidad,todas nuestras pizzas son hechas en horno a la piedra. Masa, mozzarella y salsa de tomate artesanal.Producimos pizzas exquisitas para todos nuestros clientes,estamos pendiendo de todos los comentario y observaciones de nuestras pizzas para dar un mejor servicio a nuestros clientes. <br>
+                    Visitamos y prueba una de nuestras sabrosas pizzas con tu familia, amigos y vuelve especial esa ocasion con nustras pizzas. <br>
+                    Tenemos nuestro servicio de delivery disponible si decides llevar tu pedido a tu hogar.Precios accesibles y económicos para todo público.                                      
+               </p>
+                <h2>¡No olives que con nosotros sabrás que es una pizza de verdad!</h2>
+                <h2>Cobertura Delivery</h2>
+                <p class="centrar">                    
+                    Miraflores - San Isidro - Barranco <br>
+                    Magdalena - Jesus María - Lince  <br>
+                    Surco - Surquillo - San Borja - La Molina <br>
+                    horrillos - Ate - Breña - La Perla - Callao <br>
+                </p>
+                    
+            </div>
+            <section class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.7899267219043!2d-77.05235614127805!3d-12.072402700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e3834d4de7%3A0x9dd05ead74ec36a1!2sMr.%20Pizza!5e0!3m2!1ses!2spe!4v1626977910857!5m2!1ses!2spe" width="520" height="500" style="border: 10;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </div>
+
+        <footer>
+            <div class="datos">
+                <p><img src="imagenes/pizza.png">&copy; 2021 María C.Flores Suárez</p>
+                <a href="mailto:mariafs2407@gmail.com" target="_blank"><img src="imagenes/gmail.png">mariafs2407@gmail.com</a>
+                <p><img src="imagenes/pizza (1).png"> NRC:1389</p>
+            </div>
+            <div class="redes">
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="imagenes/linkedin.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=100001252554538" target="_blank"><img src="imagenes/facebook.png"></a>
+                <a href="https://twitter.com/MariaFl32338089" target="_blank"><img src="imagenes/twitter.png"></a>
+
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
